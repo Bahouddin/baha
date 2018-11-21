@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/rapchannel"
+	xmlns:tns="http://www.example.org/rapchannel" elementFormDefault="qualified">
+<?xml version="1.0" encoding="UTF-8"?>
+	<schema xmlns="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.example.com/rapchannel" xmlns:tns="http://www.example.com/rapchannel"
+		elementFormDefault="qualified">
+		<element name="rapchannel">
+			<complexType>
+				<sequence>
+					<element name="composition" type="tns:Composition" minOccurs="2"
+						maxOccurs="unbounded" />
+				</sequence>
+			</complexType>
+		</element>
+		<complexType name="Composition">
+			<sequence>
+				<element name="name" type="string" />
+				<element name="artist" type="string" />
+				<element name="album" type="string" />
+			</sequence>
+			</attribute>
+		</complexType>
+	<complexType name="name">
+		<sequence>
+			<element name="trackname" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="artist">
+		<sequence>
+			<element name="firstname" type="string" />
+			<element name="lastname" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="album">
+		<sequence>
+			<element name="albumname" type="string" />
+		</sequence>
+		</complexType>
+</schema>
+<element name="name" type="rapchannel" abstract="true"></element>
+<element name="artist" type="tns:rapchannel" substitutionGroup="tns:person"></element>
+<element name="album" type="rapchannel"
+	substitutionGroup="tns:person"></element>
+
+<element name="rapchannel">
+	<complexType>
+		<sequence>
+			<element ref="tns:person" minOccurs="2" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+</element>
+</schema>

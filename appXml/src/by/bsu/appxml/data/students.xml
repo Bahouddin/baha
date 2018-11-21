@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student login="u.hamdamov" faculty="fpmi">
+		<name>Umedjon Hamdamov</name>
+		<telephone>+375255199878</telephone>
+		<address>
+			<country>Belarus</country>
+			<city>Minsk</city>
+			<street>Oktyabrskaya 10-2</street>
+
+		</address>
+	</student>
+	<student login="Haydarov97" faculty="fpmi">
+		<name>Haydarov Ruzibek</name>
+		<telephone>34534534634</telephone>
+		<address>
+			<country>Belarus</country>
+			<city>Brest</city>
+			<street>Oktyabrskaya 10</street>
+
+		</address>
+	</student>
+</students>

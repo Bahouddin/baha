@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vauchers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.org/vauchers"
+          xsi:schemaLocation="http://www.example.org/vauchers vauchers.xsd">
+    <vaucher id="1&amp;a">
+        <type><![CDATA[тур <выходного> дня]]></type>
+        <country>Бразилия</country>
+        <days nights="-1">2</days>
+        <transport>AVIA</transport>
+        <cost>2000</cost>
+        <hotel-characteristics>
+            <stars>4</stars>
+            <tv>true</tv>
+            <food>HB</food>
+        </hotel-characteristics>
+    </vaucher>
+    <vaucher id="2&amp;a">
+        <type>экскурсионный тур</type>
+        <country>Литва</country>
+        <days>10</days>
+        <transport>RAILWAY</transport>
+        <cost>500</cost>
+        <hotel-characteristics>
+            <stars>3</stars>
+            <tv>false</tv>
+        </hotel-characteristics>
+    </vaucher>
+    <vaucher id="3&amp;a">
+        <type>паломничество</type>
+        <country>Антарктида</country>
+        <days nights="+1">0</days>
+        <transport>SHIP</transport>
+        <cost>100</cost>
+        <hotel-characteristics>
+            <tv>false</tv>
+        </hotel-characteristics>
+    </vaucher>
+</vauchers>
